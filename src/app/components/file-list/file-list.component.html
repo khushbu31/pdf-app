@@ -1,0 +1,8 @@
+<mat-selection-list (selectionChange)="selectFile($event)" [multiple]="false">
+  <mat-list-option *ngFor="let file of fileNames" [value]="file">
+    {{file.name}}
+  </mat-list-option>
+</mat-selection-list>
+<div *ngIf="!fileNames?.length" class="message">
+  <p>No PDF available</p>
+</div>

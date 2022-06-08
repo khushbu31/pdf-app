@@ -1,0 +1,7 @@
+<div [ngClass]="dragAreaClass">
+  Drag files here
+  <a href="javascript:void(0)" (click)="file.click()">
+    or click to open
+  </a>
+  <input type="file" #file [multiple]="false" (change)="fileChange($event)" style="display:none" />
+</div>

@@ -1,0 +1,7 @@
+<ng-container *ngIf="fileData">
+  <pdf-viewer [src]="fileData.data" [original-size]="false" style="width: 99%; height: 600px">
+  </pdf-viewer>
+</ng-container>
+<div *ngIf="!fileData" class="message">
+  <p>PDF file will display here</p>
+</div>

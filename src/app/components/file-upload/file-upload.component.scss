@@ -1,0 +1,19 @@
+.dragarea,
+.droparea {
+  font-size: 1.5rem;
+  padding: 0 1.25rem 0 1.25rem;
+  background-color: #4b4a4f;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+
+  a {
+    color: #bbb;
+  }
+}
